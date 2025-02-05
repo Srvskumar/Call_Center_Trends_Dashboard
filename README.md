@@ -1,8 +1,8 @@
 # Call_Center_Trends_Dashboard
-#PWC_Virtual_Case_Experience [TASK 2] Call center Dashboard
+# PWC_Virtual_Case_Experience [TASK 2] Call center Dashboard
 
 
-##Problem Statement:
+## Problem Statement:
 In this project Create a dashboard in Power BI for the call center manager that reflects all relevant Key Performance Indicators (KPIs) and metrics in the dataset.
 
 Possible KPIs include (but not limited to):
@@ -13,7 +13,7 @@ Possible KPIs include (but not limited to):
 - Average speed of answer
 - Agent’s performance quadrant -> average handle time (talk duration) vs calls answered
 
-##Data Preparation
+## Data Preparation
 Completed the Data transformation in Power Query and the dataset loaded into Microsoft Power BI Desktop for modeling.
 
 Call Centre Trends dataset is give table named:
@@ -26,10 +26,10 @@ Data Cleaning for the dataset was done in the power query editor as follows:
 - Removed Unnecessary rows
 - Each of the columns in the table were validated to have the correct data type
 
-##Data Modeling
+## Data Modeling
 
 
-##Data Analysis (DAX):
+## Data Analysis (DAX):
 Measures used in  all visualization are:
 
 - Average of seed of answerd = `AVERAGE('call centre trends'[Speed of answer in seconds])`
@@ -53,7 +53,7 @@ Measures used in  all visualization are:
 - total calls unanswred =`COUNTX(FILTER('call centre trends','call centre trends'[Answered (Y/N)] = "No"), 'call centre trends'[Answered (Y/N)])`
 
 
-##Insights:
+## Insights:
 
 - Most of the satisfaction ratings from each call are 3 and 4.
 - The average satisfaction rating has decreased over the span of three months. January brought the highest satisfaction rating and march the lowest.
